@@ -5,5 +5,6 @@
 #
 # Copyright 2014, YOUR_COMPANY_NAME
 #
-include_recipe "apache2::default"
-include_recipe "chef-client::default"
+include_recipe 'apt::default'
+include_recipe 'apache2::default'
+include_recipe 'chef-client::default'
