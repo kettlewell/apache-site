@@ -1,0 +1,9 @@
+# Encoding: utf-8
+name 'apache-site'
+maintainer 'Matt Barlow'
+maintainer_email 'mail@mattjbarlow.com'
+license 'All Rights Reserved'
+description 'Installs/Configures apache-site'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version '0.1.0'
+depends 'apache2'
