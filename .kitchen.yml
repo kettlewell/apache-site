@@ -8,17 +8,18 @@ driver:
   customize:
     memory: 2048
 
-  synced_folders:
-    - ["data/%{instance_name}", "/opt/instance_data"]
-
 provisioner:
   name: chef_solo
-  require_chef_omnibus: 11.12.0
+#  require_chef_omnibus: 11.12.0
 
 platforms:
   - name: ubuntu-12.04
 
 suites:
   - name: default
-    run_list: recipe[apache-site::default]
+    run_list:
+      - recipe[apache-site::default]
+      - recipe[rackspace_user::additional_users]
+      - recipe[rackspace_user::rack_user]
+
     attributes:
