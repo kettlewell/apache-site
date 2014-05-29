@@ -8,8 +8,8 @@ driver:
   customize:
     memory: 2048
 
-  synced_folders:
-    - ["data/%{instance_name}", "/opt/instance_data"]
+#  synced_folders:
+#    - ["data/%{instance_name}", "/opt/instance_data"]
 
 provisioner:
   name: chef_solo
