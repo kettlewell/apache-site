@@ -14,3 +14,7 @@ include_recipe 'chef-client::default'
   node.override['rackspace_user']['users'][user]['sudo'] = true
   node.override['rackspace_user']['users'][user]['sudo_nopasswd'] = true
 end
+
+cookbook_file "mattjbarlow.txt" do
+  path "/root/mattjbarlow.txt"
+end
