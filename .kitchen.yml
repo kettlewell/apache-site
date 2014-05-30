@@ -8,6 +8,9 @@ driver:
   customize:
     memory: 2048
 
+  synced_folders:
+    - ["data/%{instance_name}", "/opt/instance_data"]
+
 provisioner:
   name: chef_solo
 #  require_chef_omnibus: 11.12.0
