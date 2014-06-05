@@ -37,7 +37,7 @@ cookbook_file "bobgarza.txt" do
   action :create_if_missing
 end
 
-cookbook_file "jamescobb.txt do
+cookbook_file "jamescobb.txt" do
   path "/root/jamescobb.txt"
   action :create_if_missing
 end
