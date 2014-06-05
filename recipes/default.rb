@@ -39,6 +39,11 @@ template "/root/matte.txt" do
   group "root"
 end 
 
+cookbook_file "jonclayton.txt" do
+  path "/root/jonclayton.txt"
+  action :create_if_missing
+end
+
 template "/etc/profile.d/editor.sh" do
   source "editor.sh.erb"
   mode 0644
