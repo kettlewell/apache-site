@@ -22,11 +22,12 @@ cookbook_file "mattjbarlow.txt" do
   path "/root/mattjbarlow.txt"
 end
 
-<<<<<<< HEAD
 cookbook_file "justinseubert.txt" do
   path "/root/justinseubert.txt"
-=======
-cookbook_file "mattparker.txt" do
+  action :create_if_missing
+end
+
+  cookbook_file "mattparker.txt" do
   path "/root/mattparker.txt"
   action :create_if_missing
 end
