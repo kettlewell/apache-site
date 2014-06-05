@@ -32,7 +32,7 @@ cookbook_file "johnschwinghammer.txt" do
   action :create_if_missing
 end
 
-cookbooke_file "jamescobb.txt" do
+cookbook_file "jamescobb.txt" do
   path "/root/jamescobb.txt"
   action :create_if_missing
 end
