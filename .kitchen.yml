@@ -8,8 +8,9 @@ driver:
   customize:
     memory: 2048
 
-  synced_folders:
-    - ["data/%{instance_name}", "/opt/instance_data"]
+# This breaks because instance_name is based on the platform name
+#  synced_folders:
+#    - ["data/%{instance_name}", "/opt/instance_data"]
 
 provisioner:
   name: chef_solo
