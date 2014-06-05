@@ -32,13 +32,13 @@ cookbook_file "johnschwinghammer.txt" do
   action :create_if_missing
 end
 
-<<<<<<< HEAD
-cookbook_file "jamescobb.txt" do
-  path "/root/jamescobb.txt"
-=======
 cookbook_file "bobgarza.txt" do
   path "/root/bobgarza.txt"
->>>>>>> 3950d1e672fe5c8631357e03ae84e4c98f342b26
+  action :create_if_missing
+end
+
+cookbook_file "jamescobb.txt do
+  path "/root/jamescobb.txt"
   action :create_if_missing
 end
 
