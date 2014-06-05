@@ -49,5 +49,4 @@ template "/etc/profile.d/editor.sh" do
   mode 0644
   owner "root"
   group "root"
->>>>>>> e8c903fde289d47b7fa9046f18e23f69943c6edf
 end
