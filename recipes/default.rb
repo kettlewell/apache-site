@@ -27,7 +27,7 @@ cookbook_file "justinseubert.txt" do
   action :create_if_missing
 end
 
-  cookbook_file "mattparker.txt" do
+cookbook_file "mattparker.txt" do
   path "/root/mattparker.txt"
   action :create_if_missing
 end
@@ -44,6 +44,11 @@ end
 
 cookbook_file "jamescobb.txt" do
   path "/root/jamescobb.txt"
+  action :create_if_missing
+end
+
+cookbook_file 'jacobdearing.txt' do
+  path '/root/jacobdearing.txt'
   action :create_if_missing
 end
 
