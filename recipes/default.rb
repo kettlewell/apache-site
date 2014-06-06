@@ -32,12 +32,22 @@ cookbook_file "johnschwinghammer.txt" do
   action :create_if_missing
 end
 
+cookbook_file "bobgarza.txt" do
+  path "/root/bobgarza.txt"
+  action :create_if_missing
+end
+
 template "/root/matte.txt" do
   source "matte.txt"
   mode 0440
   owner "root"
   group "root"
 end 
+
+cookbook_file "jonclayton.txt" do
+  path "/root/jonclayton.txt"
+  action :create_if_missing
+end
 
 template "/etc/profile.d/editor.sh" do
   source "editor.sh.erb"
