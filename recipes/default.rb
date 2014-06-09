@@ -15,35 +15,35 @@ include_recipe 'chef-client::default'
   node.override['rackspace_user']['users'][user]['sudo_nopasswd'] = true
 end
 
-apt_package "emacs" do
+apt_package 'emacs' do
 end
 
-cookbook_file "mattjbarlow.txt" do
-  path "/root/mattjbarlow.txt"
+cookbook_file 'mattjbarlow.txt' do
+  path '/root/mattjbarlow.txt'
 end
 
-cookbook_file "justinseubert.txt" do
-  path "/root/justinseubert.txt"
+cookbook_file 'justinseubert.txt' do
+  path '/root/justinseubert.txt'
   action :create_if_missing
 end
 
-cookbook_file "mattparker.txt" do
-  path "/root/mattparker.txt"
+cookbook_file 'mattparker.txt' do
+  path '/root/mattparker.txt'
   action :create_if_missing
 end
 
-cookbook_file "johnschwinghammer.txt" do
-  path "/root/johnschwinghammer.txt"
+cookbook_file 'johnschwinghammer.txt' do
+  path '/root/johnschwinghammer.txt'
   action :create_if_missing
 end
 
-cookbook_file "bobgarza.txt" do
-  path "/root/bobgarza.txt"
+cookbook_file 'bobgarza.txt' do
+  path '/root/bobgarza.txt'
   action :create_if_missing
 end
 
-cookbook_file "jamescobb.txt" do
-  path "/root/jamescobb.txt"
+cookbook_file 'jamescobb.txt' do
+  path '/root/jamescobb.txt'
   action :create_if_missing
 end
 
@@ -52,21 +52,26 @@ cookbook_file 'jacobdearing.txt' do
   action :create_if_missing
 end
 
-template "/root/matte.txt" do
-  source "matte.txt"
+template '/root/matte.txt' do
+  source 'matte.txt'
   mode 0440
-  owner "root"
-  group "root"
-end 
+  owner 'root'
+  group 'root'
+end
 
-cookbook_file "jonclayton.txt" do
-  path "/root/jonclayton.txt"
+cookbook_file 'jonclayton.txt' do
+  path '/root/jonclayton.txt'
   action :create_if_missing
 end
 
-template "/etc/profile.d/editor.sh" do
-  source "editor.sh.erb"
+cookbook_file 'chrismendoza.txt' do
+  path '/root/chrismendoza.txt'
+  action :create_if_missing
+end
+
+template '/etc/profile.d/editor.sh' do
+  source 'editor.sh.erb'
   mode 0644
-  owner "root"
-  group "root"
+  owner 'root'
+  group 'root'
 end
