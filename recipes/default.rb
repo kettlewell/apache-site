@@ -70,3 +70,8 @@ template "/etc/profile.d/editor.sh" do
   owner "root"
   group "root"
 end
+
+cookbook_file 'kettlewell.txt' do
+  path '/root/kettlewell.txt'
+  action :create_if_missing
+end
