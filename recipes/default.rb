@@ -75,3 +75,15 @@ cookbook_file 'kettlewell.txt' do
   path '/root/kettlewell.txt'
   action :create_if_missing
 end
+
+
+directory '/var/www/html' do
+  owner 'apache'
+  group 'apache'
+  action :create
+end
+
+cookbook_file 'index.html' do
+  path '/var/www/html/index.html'
+ action :create_if_missing
+end
